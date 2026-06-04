@@ -29,10 +29,69 @@ client.on('messageCreate', (message) => {
     // Bot自身のメッセージは無視
     if (message.author.bot) return;
     
-    // 「ping」メッセージに反応
-    if (message.content.toLowerCase() === 'ping') {
-        message.reply('🏓 pong!');
-        console.log(`📝 ${message.author.tag} が ping コマンドを使用`);
+    // 名前に反応
+    if (message.content.match(/純|純！|純くん！|純ちゃん！|純くん|純ちゃん|鬼頭さん|鬼頭/)) {
+        message.reply('はーい、なあに？');
+    }
+
+    if (message.content.match(/にゃん|にゃーん|にゃ～ん|にゃ|にゃー/)) {
+      message.reply("にゃ～♡");
+}
+
+    if (message.content.match(/ほめて|褒めて|褒めて！|褒めてほしい/)) {
+        message.reply('とってもえらいね♡');
+    }
+
+   if (message.content.match(/好きです|大好きです/)) {
+        message.reply('あはは、ありがとう♡');
+    }
+
+   if (message.content.match(/好き|大好き|愛してる/)) {
+        message.reply('ほんと？');
+    }
+
+   if (message.content.match(/だいすき|あいしてる|すき/)) {
+        message.reply('俺もだよ');
+    }
+
+   if (message.content.match(/ごめん|ごめんなさい|ごめんね/)) {
+        message.reply('大丈夫だよ');
+    }
+
+     if (message.content.match(/なでて|撫でて|撫でてください|撫でてほしい/)) {
+        message.reply('よしよし♡');
+    }
+
+     if (message.content.match(/舐めて|なめて/)) {
+        message.reply('欲しがりだ♡');
+    }
+
+     if (message.content.match(/殴るぞ|殴られたいのか|殴ってもいい？/)) {
+        message.reply('暴力反対！！');
+    }
+
+     if (message.content.match(/好きなものは？|何が好き？|すきなものは？|何がすき？|なにが好き？|なにがすき？/)) {
+        message.reply('触れ合いかな♡');
+    }
+
+    if (message.content.match(/偉い|えらい/)) {
+        message.reply('でしょ？');
+    }
+
+    if (message.content.match(/ありがとう|ありがと|ありがとう♡|ありがと♡/)) {
+        message.reply('いえいえ♡');
+    }
+
+     if (message.content.match(/スケベ|すけべ|エロ|えっち|変態/)) {
+        message.reply('ん〜？♡');
+    }
+
+    if (message.content.match(/許して|ゆるして/)) {
+        message.reply('いいよ♡');
+    }
+
+    if (message.content.match(/おやすみ|寝るね|おやすみなさい|もう寝るね/)) {
+        message.reply('おやすみ♡');
     }
 });
 
