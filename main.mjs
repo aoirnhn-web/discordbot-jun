@@ -50,6 +50,10 @@ client.on('messageCreate', (message) => {
         message.reply('ほんと？');
     }
 
+   if (message.content.match(/好き？|好き！？/)) {
+       message.reply('好きだよ♡');
+    }
+
    if (message.content.match(/だいすき|あいしてる|すき/)) {
         message.reply('俺もだよ');
     }
@@ -92,6 +96,22 @@ client.on('messageCreate', (message) => {
 
     if (message.content.match(/おやすみ|寝るね|おやすみなさい|もう寝るね/)) {
         message.reply('おやすみ♡');
+    }
+
+    if (message.content.match(/こんにちは|こんちは/)) {
+        message.reply('こんにちは♡');
+    }
+
+    if (message.content.match(/おはよう|おはよ/)) {
+        message.reply('おはよう♡');
+    }
+
+    if (message.content.match(/嘘|嘘つき/)) {
+        message.reply('え〜？');
+    }
+
+    if (message.content.match(/❤️/)) {
+        message.reply('❤️');
     }
 });
 
