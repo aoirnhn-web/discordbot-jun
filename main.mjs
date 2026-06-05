@@ -36,7 +36,7 @@ client.on('messageCreate', (message) => {
 
     if (message.content.match(/にゃん|にゃーん|にゃ～ん|にゃ|にゃー/)) {
       message.reply("にゃ～♡");
-}
+   }
 
     if (message.content.match(/ほめて|褒めて|褒めて！|褒めてほしい/)) {
         message.reply('とってもえらいね♡');
@@ -50,10 +50,7 @@ client.on('messageCreate', (message) => {
         message.reply('ほんと？');
     }
 
-   if (message.content.match(/好き？|好き！？/)) {
-       message.reply('好きだよ♡');
-    }
-
+ 
    if (message.content.match(/だいすき|あいしてる|すき/)) {
         message.reply('俺もだよ');
     }
