@@ -150,10 +150,6 @@ client.on('messageCreate', (message) => {
         message.reply('❤️');
     }
 
-      if (message.content.match(/クリティカル|エミネム|バラ|薔薇|好きにして♡/)) {
-        message.channel.send( { file: { attachment: /Users/ao/Desktop/!/絵/coc 絵/純/バラ.png } });
-    }
-
 });
 
 // エラーハンドリング
