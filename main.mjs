@@ -34,8 +34,12 @@ client.on('messageCreate', (message) => {
         message.reply('はーい、なあに？');
     }
 
-    if (message.content.match(/にゃん|にゃーん|にゃ～ん|にゃー/)) {
+    if (message.content.match(/にゃん|にゃーん|にゃ～ん|にゃー|🐱/)) {
       message.reply("にゃ～♡");
+   }
+
+   if (message.content.match(/わん|ワン|🐶/)) {
+      message.reply("わん♡");
    }
 
     if (message.content.match(/ほめて|褒めて/)) {
@@ -54,7 +58,7 @@ client.on('messageCreate', (message) => {
         message.reply('好きだよ');
     }
 
-    if (message.content.match(/キモ|キモい|気持ち悪い/)) {
+    if (message.content.match(/キモ|キモい|気持ち悪い|きもちわるい/)) {
         message.reply('😢');
     }
  
@@ -62,7 +66,7 @@ client.on('messageCreate', (message) => {
         message.reply('俺もだよ');
     }
 
-   if (message.content.match(/ごめん/)) {
+   if (message.content.match(/ごめん|すまん|すまない|申し訳/)) {
         message.reply('大丈夫だよ');
     }
 
@@ -78,11 +82,15 @@ client.on('messageCreate', (message) => {
         message.reply('欲しがりだ♡');
     }
 
+   if (message.content.match(/うわ/)) {
+        message.reply('なんかごめんね');
+    }
+
      if (message.content.match(/殴るぞ|殴られたいの|殴ってもいい？/)) {
         message.reply('暴力反対！！');
     }
 
-     if (message.content.match(/好きなものは？|何が好き？|すきなものは？|何がすき？|なにが好き？|なにがすき？/)) {
+     if (message.content.match(/好きなものは|何が好き|すきなものは|何がすき|なにが好き|なにがすき/)) {
         message.reply('触れ合いかな♡');
     }
 
@@ -123,31 +131,67 @@ client.on('messageCreate', (message) => {
     }
 
      if (message.content.match(/誕生日いつ？|誕生日は？/)) {
-        message.reply('11月1日だよ〜');
+        message.reply('11月1日だよ♡');
     }
 
      if (message.content.match(/血液型は/)) {
         message.reply('Aだよ♡');
     }
 
-      if (message.content.match(/好きな色は/)) {
+    if (message.content.match(/好きな色は/)) {
         message.reply('ワインレッドだよ♡');
     }
 
+    if (message.content.match(/慰めて/)) {
+        message.reply('俺で良いなら');
+    }
+
     if (message.content.match(/好きな曲は/)) {
-        message.reply('ワインレッドだよ♡');
+        message.reply('内緒♡');
+    }
+
+    if (message.content.match(/宝物は/)) {
+        message.reply('秘密♡');
+    }
+
+    if (message.content.match(/好きな人/)) {
+        message.reply('ご想像にお任せします♡');
+    }
+
+    if (message.content.match(/星座は/)) {
+        message.reply('蠍座だよ♡');
+    }
+
+    if (message.content.match(/好きな曲は/)) {
+        message.reply('内緒♡');
     }
 
     if (message.content.match(/嘘だよ/)) {
         message.reply('え〜？');
     }
 
-     if (message.content.match(/嘘つき/)) {
+    if (message.content.match(/嘘つき/)) {
         message.reply('そうかなぁ？');
     }
 
     if (message.content.match(/❤️/)) {
         message.reply('❤️');
+    }
+
+    if (message.content.match(/カサネ/)) {
+        message.reply('えっ何！？！？');
+    }
+
+    if (message.content.match(/はっきりしな|告白しな/)) {
+        message.reply('なんのこと？');
+    }
+
+    if (message.content.match(/最悪|クズ|カス|最低/)) {
+        message.reply('よく言われる〜♡');
+    }
+
+     if (message.content.match(/顔がいい|顔が綺麗|美人|綺麗/)) {
+        message.reply('どうも♡');
     }
 
 });
