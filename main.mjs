@@ -30,15 +30,15 @@ client.on('messageCreate', (message) => {
     if (message.author.bot) return;
     
     // 名前に反応
-    if (message.content.match(/純|純！|純くん！|純ちゃん！|純くん|純ちゃん|鬼頭さん|鬼頭/)) {
+    if (message.content.match(/純|鬼頭/)) {
         message.reply('はーい、なあに？');
     }
 
-    if (message.content.match(/にゃん|にゃーん|にゃ～ん|にゃ|にゃー/)) {
+    if (message.content.match(/にゃん|にゃーん|にゃ～ん|にゃー/)) {
       message.reply("にゃ～♡");
    }
 
-    if (message.content.match(/ほめて|褒めて|褒めて！|褒めてほしい/)) {
+    if (message.content.match(/ほめて|褒めて/)) {
         message.reply('とってもえらいね♡');
     }
 
@@ -46,28 +46,39 @@ client.on('messageCreate', (message) => {
         message.reply('あはは、ありがとう♡');
     }
 
-   if (message.content.match(/好き|大好き|愛してる/)) {
+   if (message.content.match(/好きだよ|愛してる/)) {
         message.reply('ほんと？');
     }
 
+   if (message.content.match(/好き？/)) {
+        message.reply('好きだよ');
+    }
+
+    if (message.content.match(/キモ|キモい|気持ち悪い/)) {
+        message.reply('😢');
+    }
  
-   if (message.content.match(/だいすき|あいしてる|すき/)) {
+   if (message.content.match(/あいしてる|すき/)) {
         message.reply('俺もだよ');
     }
 
-   if (message.content.match(/ごめん|ごめんなさい|ごめんね/)) {
+   if (message.content.match(/ごめん/)) {
         message.reply('大丈夫だよ');
     }
 
-     if (message.content.match(/なでて|撫でて|撫でてください|撫でてほしい/)) {
+     if (message.content.match(/なでて|撫でて/)) {
         message.reply('よしよし♡');
+    }
+
+      if (message.content.match(/なでなで|なでる|撫でる/)) {
+        message.reply('照れるな');
     }
 
      if (message.content.match(/舐めて|なめて/)) {
         message.reply('欲しがりだ♡');
     }
 
-     if (message.content.match(/殴るぞ|殴られたいのか|殴ってもいい？/)) {
+     if (message.content.match(/殴るぞ|殴られたいの|殴ってもいい？/)) {
         message.reply('暴力反対！！');
     }
 
@@ -79,11 +90,11 @@ client.on('messageCreate', (message) => {
         message.reply('でしょ？');
     }
 
-    if (message.content.match(/ありがとう|ありがと|ありがとう♡|ありがと♡/)) {
+    if (message.content.match(/ありがと|感謝|サンキュ|サンクス/)) {
         message.reply('いえいえ♡');
     }
 
-     if (message.content.match(/スケベ|すけべ|エロ|えっち|変態/)) {
+     if (message.content.match(/スケベ|すけべ|エロ|えろ|えっち|変態/)) {
         message.reply('ん〜？♡');
     }
 
@@ -91,7 +102,7 @@ client.on('messageCreate', (message) => {
         message.reply('いいよ♡');
     }
 
-    if (message.content.match(/おやすみ|寝るね|おやすみなさい|もう寝るね/)) {
+    if (message.content.match(/おやすみ|寝る/)) {
         message.reply('おやすみ♡');
     }
 
@@ -103,13 +114,46 @@ client.on('messageCreate', (message) => {
         message.reply('おはよう♡');
     }
 
-    if (message.content.match(/嘘|嘘つき/)) {
+     if (message.content.match(/祝って|お祝いして/)) {
+        message.reply('おめでとう♡');
+    }
+
+     if (message.content.match(/おめでとう/)) {
+        message.reply('嬉しい！ありがとう♡');
+    }
+
+     if (message.content.match(/誕生日いつ？|誕生日は？/)) {
+        message.reply('11月1日だよ〜');
+    }
+
+     if (message.content.match(/血液型は/)) {
+        message.reply('Aだよ♡');
+    }
+
+      if (message.content.match(/好きな色は/)) {
+        message.reply('ワインレッドだよ♡');
+    }
+
+    if (message.content.match(/好きな曲は/)) {
+        message.reply('ワインレッドだよ♡');
+    }
+
+    if (message.content.match(/嘘だよ/)) {
         message.reply('え〜？');
+    }
+
+     if (message.content.match(/嘘つき/)) {
+        message.reply('そうかなぁ？');
     }
 
     if (message.content.match(/❤️/)) {
         message.reply('❤️');
     }
+
+      if (message.content.match(/クリティカル|エミネム|バラ|薔薇|好きにして♡/)) {
+        message.channel.send( { file: { attachment: /Users/ao/Desktop/!/絵/coc 絵/純/バラ.png } });
+    }
+
 });
 
 // エラーハンドリング
